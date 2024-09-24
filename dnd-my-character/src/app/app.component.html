@@ -2,40 +2,43 @@
             <div class="header">
                 <div class="header_block-1">
                     <div class="header__item-name">
-                        <input class="head-input" value="Мустафар"> <br>
+                        <input class="head-input" input [(ngModel)]="charName" placeholder="Введите имя персонажа"> <br>
                         <b>Имя персонажа</b>
                     </div>
                 </div>
                 <div class="header_block-2">
                     <div class="header__item">
-                        <input class="head-input" value="Инженер. 2-ЛВЛ"> <br>
+                        <input class="head-input" input [(ngModel)]="charClass" placeholder="Введите класс и уровень"> <br>
                         <b>Класс и уровень</b>
                     </div>
                     <div class="header__item">
-                        <input class="head-input" value="Гильдейский ремесленник"> <br>
+                        <input class="head-input" input [(ngModel)]="charOrigin" placeholder="Введите происхождение"> <br>
                         <b>Происхождение</b>
                     </div>
                     <div class="header__item">
-                        <input class="head-input" value="Константин"> <br>
+                        <input class="head-input" input [(ngModel)]="userName" placeholder="Введите имя игрока"> <br>
                         <b>Имя игрока</b>
                     </div>
                     <div class="header__item">
-                        <input class="head-input" value="Инженер. 2-ЛВЛ"> <br>
-                        <b>Класс и уровень</b>
+                        <input class="head-input" input [(ngModel)]="charRace" placeholder="Введите Рассу"> <br>
+                        <b>Расса</b>
                     </div>
                     <div class="header__item">
-                        <input class="head-input" value="Гильдейский ремесленник"> <br>
-                        <b>Происхождение</b>
+                        <input class="head-input" input [(ngModel)]="charWorldView" placeholder="Введите Мировозрение"> <br>
+                        <b>Мировозрение</b>
                     </div>
                     <div class="header__item">
-                        <input class="head-input" value="Константин"> <br>
-                        <b>Имя игрока</b>
+                        <input class="head-input" input [(ngModel)]="charXP" placeholder="Введите опыт"> <br>
+                        <b>Опыт</b>
                  </div>
                 </div>
             </div>
             <hr class="hrhead">
         </header>
             <div class="main-block">
+                <div class="save-button">
+                    <button class="save-button__item" (click)="saveAllChanges()">Сохранить</button>
+                </div>
                 <div class="main-block__left">
                     <div class="main-block__left_top">
                         <div class="main-block__chracteristics">
