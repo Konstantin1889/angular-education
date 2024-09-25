@@ -44,47 +44,47 @@
                         <div class="main-block__chracteristics">
                             <div class="main-block__chracteristics_item">
                                 <h2>Сила</h2> <br>
-                                <input class="input-characteristics-top" value="+1"> <br>
-                                <input class="input-characteristics-bottom" value="13"> 
+                                <input class="input-characteristics-top" input [(ngModel)]="powerMod"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="powerStat"> 
                             </div>
                             <div class="main-block__chracteristics_item">
                                 <h2>Ловкость</h2> <br>
-                                <input class="input-characteristics-top" value="+2"> <br>
-                                <input class="input-characteristics-bottom" value="15">
+                                <input class="input-characteristics-top" input [(ngModel)]="dexMod"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="dexStat">
                             </div>
                             <div class="main-block__chracteristics_item">
                                 <h2>Выносливость</h2> <br>
-                                <input class="input-characteristics-top" value="+3"> <br>
-                                <input class="input-characteristics-bottom" value="16">
+                                <input class="input-characteristics-top" input [(ngModel)]="enduranceMod"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="enduranceStat">
                             </div>
                             <div class="main-block__chracteristics_item">
                                 <h2>Интелект</h2> <br>
-                                <input class="input-characteristics-top" value="+3"> <br>
-                                <input class="input-characteristics-bottom" value="17">
+                                <input class="input-characteristics-top" input [(ngModel)]="intellectMod"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="intellectStat">
                             </div>
                             <div class="main-block__chracteristics_item">
                                 <h2>Мудрость</h2> <br>
-                                <input class="input-characteristics-top" value="-1"> <br>
-                                <input class="input-characteristics-bottom" value="8">
+                                <input class="input-characteristics-top" input [(ngModel)]="wisdomMod"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="wisdomStat">
                             </div>
                             <div class="main-block__chracteristics_item">
                                 <h2>Харизма</h2> <br>
-                                <input class="input-characteristics-top" value="+1"> <br>
-                                <input class="input-characteristics-bottom" value="13">
+                                <input class="input-characteristics-top" input [(ngModel)]="charismaStat"> <br>
+                                <input class="input-characteristics-bottom" input [(ngModel)]="charismaMod">
                             </div>
                         </div>
                         <div>
                             <div class="main-block__chracteristics-second">
-                                <div class="main-block__chracteristics-second_text"> <input class="input__chracteristics-second"> <b>Вдохновение</b> </div> <hr>
-                                <div class="main-block__chracteristics-second_text"> <input class="input__chracteristics-second" value="+2">  <b>Бонус умения</b> </div>
+                                <div class="main-block__chracteristics-second_text"> <input class="input__chracteristics-second" input [(ngModel)]="inspiration"> <b>Вдохновение</b> </div> <hr>
+                                <div class="main-block__chracteristics-second_text"> <input class="input__chracteristics-second" input [(ngModel)]="skillBonus">  <b>Бонус умения</b> </div>
                             </div>
                             <div class="main-block__chracteristics-second">
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="+1"> <i>Сила</i> </div>
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="+2"> <i>Ловкость</i> </div>
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="+3"> <i>Выносливость</i> </div>
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="+3"> <i>Интелект</i> </div>
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="-1"> <i>Мудрость</i> </div>
-                                <div class="characteristics-second__tests-item"> <input type="checkbox"> <input class="input__chracteristics-second" value="+1"> <i>Харизма</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesPowerCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesPower"> <i>Сила</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesDexCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesDex"> <i>Ловкость</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesEnduranceCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesEndurance"> <i>Выносливость</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesIntellectCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesIntellect"> <i>Интелект</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesWisdomCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesWisdom"> <i>Мудрость</i> </div>
+                                <div class="characteristics-second__tests-item"> <input type="checkbox" [(ngModel)]="rescuesCharismaCheck"> <input class="input__chracteristics-second" input [(ngModel)]="rescuesCharisma"> <i>Харизма</i> </div>
                                 <div class="characteristics-second__name-text"> <b>Испытания</b> </div>
                             </div>
                             <div class="main-block__chracteristics-second">
@@ -112,10 +112,10 @@
                     </div>
                     <div class="main-block__characteristics_bottom-block">
                         <div class="characteristics_pasive-wisdom">
-                        <div class="characteristics_pasive-wisdom_item"> <input class="input__pasive-vidsom"> <i>Пассивныя мудрость(Вниммание)</i> </div>
+                        <div class="characteristics_pasive-wisdom_item"> <input class="input__pasive-vidsom" input [(ngModel)]="pasiveVisdom"> <i>Пассивныя мудрость(Вниммание)</i> </div>
                         </div>
                         <div class="characteristics_passive-widsom__text-area">
-                            <div><textarea class="character-stats__text-area_item-spells">Язык: Всеобщий                        
+                            <div><textarea class="character-stats__text-area_item-spells" [(ngModel)]="otherSkills">                
                             </textarea></div>
                             <div><b>Прочие умения и языки</b></div>
                         </div>
@@ -125,54 +125,52 @@
                     <div class="main-block__character-stats_collor">
                         <div class="character-stats_collor__armor-stats">
                             <div class="character-stats_collor__armor-stats_item">
-                            <div> <input class="input__armor-stats" value="14"> </div>
+                            <div> <input class="input__armor-stats" input [(ngModel)]="armorClass"> </div>
                             <div class="character-stats_collor__armor-stats_text"> <h2>Класс брони</h2> </div>
                             </div>
                             <div class="character-stats_collor__armor-stats_item">
-                            <div> <input class="input__armor-stats" value="+2"> </div>
+                            <div> <input class="input__armor-stats" input [(ngModel)]="initiative"> </div>
                             <div class="character-stats_collor__armor-stats_text"> <h2>Инициатива</h2> </div>
                             </div>
                             <div class="character-stats_collor__armor-stats_item">
-                            <div> <input class="input__armor-stats" value="25"> </div>
+                            <div> <input class="input__armor-stats" input [(ngModel)]="speed"> </div>
                             <div class="character-stats_collor__armor-stats_text"> <h2>Скорость</h2> </div>
                             </div>
                         </div>
                         <div>
                             <div class="character-stats_collor__health-item">
-                                <div class="character-stats_collor__health-item-text"> <i>Максимум ПЗ</i> <input class="health-item__input" value="11"> </div>
-                                <div class="character-stats_collor__health-item-text"> <input class="input__health" value="11"> </div>
+                                <div class="character-stats_collor__health-item-text"> <i>Максимум ПЗ</i> <input class="health-item__input" input [(ngModel)]="healthMax"> </div>
+                                <div class="character-stats_collor__health-item-text"> <input class="input__health" input [(ngModel)]="health"> </div>
                                 <div class="character-stats_collor__health-item-text"> <h2>Текущие пункты здоровья</h2> </div>
                             </div>
                             <div class="character-stats_collor__health-item">
-                                <div class="character-stats_collor__health-item-text"> <input class="input__health"> </div>
+                                <div class="character-stats_collor__health-item-text"> <input class="input__health" input [(ngModel)]="temporaryHealth"> </div>
                                 <div class="character-stats_collor__health-item-text"> <h2>Временные пункты здоровья</h2> </div>
                             </div>
                         </div>
                     </div>
                     <div class="character-stats_collor__dice-rolls">
                         <div class="character-stats_collor__dice-rolls_health-dice">
-                            <div class="character-stats_collor__dice-rolls_health-dice_items"> <i>Всего</i> <input class="health-dice__input" value="2"> </div>
-                            <div class="character-stats_collor__dice-rolls_health-dice_items"> <input class="input__health-dice"> </div>
+                            <div class="character-stats_collor__dice-rolls_health-dice_items"> <i>Всего</i> <input class="health-dice__input" input [(ngModel)]="diceMax"> </div>
+                            <div class="character-stats_collor__dice-rolls_health-dice_items"> <input class="input__health-dice" input [(ngModel)]="diceHealth"> </div>
                             <div class="character-stats_collor__dice-rolls_health-dice_items"> <b>Кости здоровья</b> </div>
                         </div>
                         <div class="character-stats_collor__dice-rolls_health-dice">
-                            <div class="character-stats_collor__dice-rolls_health-dice_items"> Успехи <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> </div>
-                            <div class="character-stats_collor__dice-rolls_health-dice_items"> Провалы <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> </div>
+                            <div class="character-stats_collor__dice-rolls_health-dice_items"> Успехи <input type="checkbox" [(ngModel)]="success1"> <input type="checkbox" [(ngModel)]="success2"> <input type="checkbox" [(ngModel)]="success3"> </div>
+                            <div class="character-stats_collor__dice-rolls_health-dice_items"> Провалы <input type="checkbox" [(ngModel)]="false1"> <input type="checkbox" [(ngModel)]="false2"> <input type="checkbox" [(ngModel)]="false3"> </div>
                             <div class="character-stats_collor__dice-rolls_health-dice_items"> <b>Испыт.Против смерти</b> </div>
                         </div>
                     </div>
                     <div>
                         <div class="character-stats__text-area">
-                            <div><textarea class="character-stats__text-area_item-spells">Заговоры:
-Громовой клинок
-Огенный снаряд                        
+                            <div><textarea class="character-stats__text-area_item-spells" [(ngModel)]="atackSpells">                     
                             </textarea></div>
                             <div><b>Атаки и заклинания</b></div>
                         </div>
                     </div> 
                     <div>
                         <div class="character-stats__text-area_equipment">
-                            <div><textarea class="character-stats__text-area_equipment-item">                        
+                            <div><textarea class="character-stats__text-area_equipment-item" [(ngModel)]="equipment">                        
                             </textarea></div>
                             <div><b>Снаряжение</b></div>
                         </div>
@@ -181,24 +179,19 @@
                 <div class="main-block__right">
                     <div class="main-block__right_text-block">
                         <div class="character-stats__text-area">
-                            <div><textarea class="character-stats__text-area_item">Я не могу легко расставаться с деньгами, и могу сколь угодно долго торговаться.</textarea></div>
+                            <div><textarea class="character-stats__text-area_item" [(ngModel)]="personalityTraits"></textarea></div>
                             <div><b>Свойства личности</b></div>
                         </div>
                         <div class="character-stats__text-area">
-                            <div> <textarea class="character-stats__text-area_item">Свобода. Все должны быть свободны, чтобы жить так, как хочется им. (Хаотичный)</textarea> </div>
+                            <div> <textarea class="character-stats__text-area_item" [(ngModel)]="ideals"></textarea> </div>
                             <div> <b>Идеалы</b></div>
                         </div>
                         <div class="character-stats__text-area">
-                            <div> <textarea class="character-stats__text-area_item">Мастерская, где я учился ремеслу, для меня — самое важное место в мире.</textarea> </div>
+                            <div> <textarea class="character-stats__text-area_item" [(ngModel)]="ties"></textarea> </div>
                             <div> <b>Узы</b> </div>
                         </div>
                         <div class="character-stats__text-area">
-                        <div> <textarea class="character-stats__text-area_item-long">Черты:
-Древний ритуал
-Особенности:
-Тёмное зрение
-Девять жизней
-Рожденный в пустыне
+                        <div> <textarea class="character-stats__text-area_item-long" [(ngModel)]="features">
                             </textarea> </div>
                             <div> <b>Особенности и свойства</b> </div>
                         </div>

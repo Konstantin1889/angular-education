@@ -76,7 +76,7 @@
 
 .main-block__chracteristics {
     background-color: #EAEAEA;
-    z-index: -2;
+    z-index: 1;
     border-radius: 30px;
     flex-grow: 1;
 }
@@ -156,6 +156,7 @@
     border-bottom: 2px;
     border-color: #7c7c7c;
     border-style: solid;
+    z-index: 1;
 }
 
 .input-characteristics-bottom {
@@ -168,6 +169,7 @@
     border-color: #0c0c0c;
     border-style: solid;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .main-block__chracteristics-second {
@@ -440,7 +442,19 @@ input {
 
 .save-button__item:hover {
     transform: translate(0,-3px);
-    box-shadow: 0 0 40px 0 rgb(185, 185, 185);
+    box-shadow: 0 0 40px 0 rgb(172, 172, 172);
+}
+
+.save-button__item:focus {
+    border-radius: 10px;
+    border: none;
+    color: rgb(27, 27, 27);
+    transition: .2s linear;
+    background-color: #f3f3f3;
+    font-size: 24px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgb(185, 185, 185);
+    transition: 0.5s
 }
 
 @media (max-width: 980px) {
