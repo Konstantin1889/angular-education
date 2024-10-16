@@ -1,35 +1,28 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
-import { characterData, characterCheckboxesData, characterTextAreasData } from './variables/app.variables';
+import { HeaderComponent } from "./header/header.component";
+import { PlayerComponent } from "./player/player.component";
+import { MainBlockComponent } from "./main-block/main-block.component";
+import { DataService } from './data.service';
+import { HealthBlockComponent } from "./health-block/health-block.component";
+import { TextAreaComponent } from "./text-area/text-area.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FormsModule, HeaderComponent, PlayerComponent, MainBlockComponent, HealthBlockComponent, TextAreaComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
-  character = characterData;
-  characterCheckboxes = characterCheckboxesData;
-  characterTextAreas = characterTextAreasData;
+  dataService:DataService;
 
-  saveAllChanges(): void {
-
-    Object.entries(this.character).forEach(([key, value]) => {
-      localStorage.setItem(key, value);
-    });
-
-    Object.entries(this.characterCheckboxes).forEach(([key, value]) => {
-      localStorage.setItem(key, value.toString());
-    });
-
-    Object.entries(this.characterTextAreas).forEach(([key, value]) => {
-      localStorage.setItem(key, value);
-    });
-
-    console.log('All changes saved.');
+  constructor () {
+    this.dataService = new DataService();
   }
 }

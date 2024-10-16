@@ -1,0 +1,95 @@
+<div class="main-block__center">
+  <div class="main-block__character-stats_collor">
+      <div class="character-stats_collor__armor-stats">
+          <div class="character-stats_collor__armor-stats_item">
+              <div>
+                  <input class="input__armor-stats" [(ngModel)]="healthData.armorClass" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__armor-stats_text">
+                  <h2>Класс брони</h2>
+              </div>
+          </div>
+          <div class="character-stats_collor__armor-stats_item">
+              <div>
+                  <input class="input__armor-stats" [(ngModel)]="healthData.initiative" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__armor-stats_text">
+                  <h2>Инициатива</h2>
+              </div>
+          </div>
+          <div class="character-stats_collor__armor-stats_item">
+              <div>
+                  <input class="input__armor-stats" [(ngModel)]="healthData.speed" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__armor-stats_text">
+                  <h2>Скорость</h2>
+              </div>
+          </div>
+      </div>
+      <div>
+          <div class="character-stats_collor__health-item">
+              <div class="character-stats_collor__health-item-text">
+                  <i>Максимум ПЗ</i>
+                  <input class="health-item__input" [(ngModel)]="healthData.maxHealth" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__health-item-text">
+                <input class="input__health" [(ngModel)]="healthData.nowHealth" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__health-item-text"> <h2>Текущие пункты здоровья</h2> </div>
+          </div>
+          <div class="character-stats_collor__health-item">
+              <div class="character-stats_collor__health-item-text">
+                  <input class="input__health" [(ngModel)]="healthData.timeHealth" (ngModelChange)="saveFunction()">
+              </div>
+              <div class="character-stats_collor__health-item-text">
+                  <h2>Временные пункты здоровья</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="character-stats_collor__dice-rolls">
+      <div class="character-stats_collor__dice-rolls_health-dice">
+          <div class="character-stats_collor__dice-rolls_health-dice_items">
+              <i>Всего</i>
+              <input class="health-dice__input" [(ngModel)]="healthData.maxHealthDice" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="character-stats_collor__dice-rolls_health-dice_items">
+              <input class="input__health-dice" [(ngModel)]="healthData.nowHealthDice" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="character-stats_collor__dice-rolls_health-dice_items">
+              <b>Кости здоровья</b>
+          </div>
+      </div>
+      <div class="character-stats_collor__dice-rolls_health-dice">
+          <div class="character-stats_collor__dice-rolls_health-dice_items">
+              Успехи
+              <input type="checkbox" >
+              <input type="checkbox">
+              <input type="checkbox" >
+          </div>
+          <div class="character-stats_collor__dice-rolls_health-dice_items">
+              Провалы
+              <input type="checkbox" >
+              <input type="checkbox">
+              <input type="checkbox" >
+          </div>
+          <div class="character-stats_collor__dice-rolls_health-dice_items"> <b>Испыт.Против смерти</b> </div>
+      </div>
+  </div>
+  <div>
+      <div class="character-stats__text-area">
+          <div>
+              <textarea class="character-stats__text-area_item-spells" [(ngModel)]="textAreaData.atackAndSpells" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div><b>Атаки и заклинания</b></div>
+      </div>
+  </div>
+  <div>
+      <div class="character-stats__text-area_equipment">
+          <div>
+              <textarea class="character-stats__text-area_equipment-item" [(ngModel)]="textAreaData.equipment" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div><b>Снаряжение</b></div>
+      </div>
+  </div>
+</div>

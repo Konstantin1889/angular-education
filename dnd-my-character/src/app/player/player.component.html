@@ -1,0 +1,37 @@
+<header>
+  <div class="header">
+      <div class="header_block-1">
+          <div class="header__item-name">
+              <input class="header-input" [(ngModel)]="playerData.characterName" (ngModelChange)="saveFunction()" placeholder="Введите имя персонажа"> <br>
+              <b>Имя персонажа</b>
+          </div>
+      </div>
+      <div class="header_block-2">
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.characterClass" (ngModelChange)="saveFunction()" placeholder="Введите класс и уровень"> <br>
+              <b>Класс и уровень</b>
+          </div>
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.origins" (ngModelChange)="saveFunction()" placeholder="Введите происхождение"> <br>
+              <b>Происхождение</b>
+          </div>
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.playerName" (ngModelChange)="saveFunction()" placeholder="Введите имя игрока"> <br>
+              <b>Имя игрока</b>
+          </div>
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.race" (ngModelChange)="saveFunction()" placeholder="Введите Рассу"> <br>
+              <b>Расса</b>
+          </div>
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.worldview" (ngModelChange)="saveFunction()" placeholder="Введите Мировозрение"> <br>
+              <b>Мировозрение</b>
+          </div>
+          <div class="header__item">
+              <input class="header-input" [(ngModel)]="playerData.xp" (ngModelChange)="saveFunction()" placeholder="Введите опыт"> <br>
+              <b>Опыт</b>
+          </div>
+        </div>
+  </div>
+  <hr class="header__hrhead">
+</header>

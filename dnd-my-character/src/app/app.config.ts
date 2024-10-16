@@ -8,9 +8,9 @@ import { provideTransloco } from '@ngneat/transloco';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient(), provideTransloco({
-        config: { 
-          availableLangs: ['en'],
-          defaultLang: 'en',
+        config: {
+          availableLangs: ['en', 'ru'],
+          defaultLang: 'ru',
           // Remove this option if your application doesn't support changing language in runtime.
           reRenderOnLangChange: true,
           prodMode: !isDevMode(),

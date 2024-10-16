@@ -1,0 +1,36 @@
+<div class="main-block__right">
+  <div class="main-block__right_text-block">
+      <div class="character-stats__text-area">
+          <div>
+              <textarea class="character-stats__text-area_item" [(ngModel)]="textAreaData.persTraits" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div>
+              <b>Свойства личности</b>
+          </div>
+      </div>
+      <div class="character-stats__text-area">
+          <div>
+              <textarea class="character-stats__text-area_item" [(ngModel)]="textAreaData.ideals" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div>
+              <b>Идеалы</b>
+          </div>
+      </div>
+      <div class="character-stats__text-area">
+          <div>
+              <textarea class="character-stats__text-area_item" [(ngModel)]="textAreaData.ties" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div>
+              <b>Узы</b>
+          </div>
+      </div>
+      <div class="character-stats__text-area">
+      <div>
+          <textarea class="character-stats__text-area_item-long" [(ngModel)]="textAreaData.features" (ngModelChange)="saveFunction()"></textarea>
+      </div>
+          <div>
+              <b>Особенности и свойства</b>
+          </div>
+      </div>
+  </div>
+</div>

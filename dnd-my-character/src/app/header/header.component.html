@@ -1,0 +1,10 @@
+<ng-container *transloco="let t">
+  <header>
+    <h1>{{t('changeLang.changeLang')}}</h1>
+    <nav>
+      <button (click)="toggle()">
+        {{ isToggled ? 'en' : 'ru' }}
+      </button>
+    </nav>
+  </header>
+</ng-container>

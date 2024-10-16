@@ -1,0 +1,207 @@
+<div class="main-block__left">
+  <div class="main-block__left_top">
+      <div class="main-block__chracteristics">
+          <div class="main-block__chracteristics_item">
+              <h2>Сила</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.powerMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.powerStat" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="main-block__chracteristics_item">
+              <h2>Ловкость</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.dexMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.dexStat" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="main-block__chracteristics_item">
+              <h2>Выносливость</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.enduranceMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.enduranceStat" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="main-block__chracteristics_item">
+              <h2>Интелект</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.intellectMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.intellectStat" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="main-block__chracteristics_item">
+              <h2>Мудрость</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.wisdomMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.wisdomStat" (ngModelChange)="saveFunction()">
+          </div>
+          <div class="main-block__chracteristics_item">
+              <h2>Харизма</h2> <br>
+              <input class="input-characteristics-top" [(ngModel)]="mainStatsData.charismaMod" (ngModelChange)="saveFunction()"> <br>
+              <input class="input-characteristics-bottom" [(ngModel)]="mainStatsData.charismaStat" (ngModelChange)="saveFunction()">
+          </div>
+      </div>
+      <div>
+          <div class="main-block__chracteristics-second">
+              <div class="main-block__chracteristics-second_text">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.inspiration" (ngModelChange)="saveFunction()">
+                  <b>Вдохновение</b>
+              </div> <hr>
+              <div class="main-block__chracteristics-second_text">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.skillBonus" (ngModelChange)="saveFunction()">
+                  <b>Бонус умения</b>
+              </div>
+          </div>
+          <div class="main-block__chracteristics-second">
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.power" (ngModelChange)="saveFunction()">
+                  <i>Сила</i>
+              </div>
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.dex" (ngModelChange)="saveFunction()">
+                  <i>Ловкость</i>
+              </div>
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.endurance" (ngModelChange)="saveFunction()">
+                  <i>Выносливость</i>
+              </div>
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.intellect" (ngModelChange)="saveFunction()">
+                  <i>Интелект</i>
+              </div>
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.wisdom" (ngModelChange)="saveFunction()">
+                  <i>Мудрость</i>
+              </div>
+              <div class="characteristics-second__tests-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.charisma" (ngModelChange)="saveFunction()">
+                  <i>Харизма</i>
+              </div>
+              <div class="characteristics-second__name-text">
+                  <b>Испытания</b>
+              </div>
+          </div>
+          <div class="main-block__chracteristics-second">
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.acrobatics" (ngModelChange)="saveFunction()">
+                  <i>Акробатика</i>
+                  <i>(Лвк)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second"  [(ngModel)]="skillsStatsData.athletics" (ngModelChange)="saveFunction()">
+                  <i>Атлетика</i>
+                  <i>(Сил)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.attention" (ngModelChange)="saveFunction()">
+                  <i>Внимание</i>
+                  <i>(Мдр)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.survival" (ngModelChange)="saveFunction()">
+                  <i>Выживание</i>
+                  <i>(Мдр)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.training" (ngModelChange)="saveFunction()">
+                  <i>Дрессировка</i>
+                  <i>(Мдр)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.intimidation" (ngModelChange)="saveFunction()">
+                  <i>Запугивание</i>
+                  <i>(Хар)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.performance" (ngModelChange)="saveFunction()">
+                  <i>Исполнение</i>
+                  <i>(Хар)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.hystory" (ngModelChange)="saveFunction()">
+                  <i>История</i>
+                  <i>(Инт)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.handDex" (ngModelChange)="saveFunction()">
+                  <i>Ловкость рук</i>
+                  <i>(Лвк)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.magic" (ngModelChange)="saveFunction()">
+                  <i>Магия</i>
+                  <i>(Инт)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.medicine" (ngModelChange)="saveFunction()">
+                  <i>Медицина</i>
+                  <i>(Мдр)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.deception" (ngModelChange)="saveFunction()">
+                  <i>Обман</i>
+                  <i>(Хар)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.nature" (ngModelChange)="saveFunction()">
+                  <i>Природа</i>
+                  <i>(Инт)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.insight" (ngModelChange)="saveFunction()">
+                  <i>Проницательность</i>
+                  <i>(Мдр)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.investigations" (ngModelChange)="saveFunction()">
+                  <i>Расследование</i>
+                  <i>(Инт)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox">
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.religion" (ngModelChange)="saveFunction()">
+                  <i>Религия</i>
+                  <i>(Инт)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.stealth" (ngModelChange)="saveFunction()">
+                  <i>Скрытность</i>
+                  <i>(Лвк)</i>
+              </div>
+              <div class="characteristics-second__skils-item">
+                  <input type="checkbox" >
+                  <input class="input__chracteristics-second" [(ngModel)]="skillsStatsData.persuasion" (ngModelChange)="saveFunction()">
+                  <i>Убеждение</i>
+                  <i>(Хар)</i>
+              </div>
+              <div class="characteristics-second__name-text"> <b>Навыки</b> </div>
+          </div>
+      </div>
+  </div>
+  <div class="main-block__characteristics_bottom-block">
+      <div class="characteristics_pasive-wisdom">
+          <div class="characteristics_pasive-wisdom_item">
+              <input class="input__pasive-vidsom" [(ngModel)]="skillsStatsData.pasiveVisdom" (ngModelChange)="saveFunction()">
+              <i>Пассивныя мудрость(Вниммание)</i>
+          </div>
+      </div>
+      <div class="characteristics_pasive-wisdom__text-area">
+          <div><textarea class="character-stats__text-area_item-spells" [(ngModel)]="textAreaData.otherSkills" (ngModelChange)="saveFunction()"></textarea>
+          </div>
+          <div><b>Прочие умения и языки</b></div>
+      </div>
+  </div>
+</div>
