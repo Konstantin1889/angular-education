@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LocalSaveService {
-  storageGet (dataName:string) {
+  storageGet (dataName:any) {
     if (localStorage.getItem(dataName)) {
       let data = localStorage.getItem(dataName) || '';
       return JSON.parse(data);

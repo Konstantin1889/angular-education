@@ -84,6 +84,35 @@ export class DataService {
 
   checkboxData = {
     powerCheck: '',
+    dexCheck: '',
+    enduranceCheck: '',
+    intellectCheck: '',
+    wisdomCheck: '',
+    charismaCheck: '',
+    acrobaticsCheck: '',
+    athleticsCheck: '',
+    attentionCheck: '',
+    survivalCheck: '',
+    trainingCheck: '',
+    intimidationCheck: '',
+    performanceCheck: '',
+    hystoryCheck: '',
+    handDexCheck: '',
+    magicCheck: '',
+    medicineCheck: '',
+    deceptionCheck: '',
+    natureCheck: '',
+    insightCheck: '',
+    investigationsCheck: '',
+    religionCheck: '',
+    stealthCheck: '',
+    persuasionCheck: '',
+    success1: '',
+    success2: '',
+    success3: '',
+    fail1: '',
+    fail2: '',
+    fail3: '',
   }
 
   private localsaveservice: LocalSaveService;
@@ -95,6 +124,7 @@ export class DataService {
     this.skillsStatsData = this.localsaveservice.storageGet('skilsStatsData');
     this.textAreaData = this.localsaveservice.storageGet('textAreaData');
     this.healthData = this.localsaveservice.storageGet('healthData');
+    this.checkboxData = this.localsaveservice.storageGet('checkboxData');
   }
 
   saveLocal () {
@@ -103,5 +133,6 @@ export class DataService {
     this.localsaveservice.storageSet('skilsStatsData', this.skillsStatsData)
     this.localsaveservice.storageSet('textAreaData', this.textAreaData)
     this.localsaveservice.storageSet('healthData', this.healthData)
+    this.localsaveservice.storageSet('checkboxData', this.checkboxData)
   }
 }

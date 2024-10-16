@@ -63,15 +63,15 @@
       <div class="character-stats_collor__dice-rolls_health-dice">
           <div class="character-stats_collor__dice-rolls_health-dice_items">
               Успехи
-              <input type="checkbox" >
-              <input type="checkbox">
-              <input type="checkbox" >
+              <input type="checkbox" [(ngModel)]="checkboxData.success1" (ngModelChange)="saveFunction()">
+              <input type="checkbox" [(ngModel)]="checkboxData.success2" (ngModelChange)="saveFunction()">
+              <input type="checkbox" [(ngModel)]="checkboxData.success3" (ngModelChange)="saveFunction()">
           </div>
           <div class="character-stats_collor__dice-rolls_health-dice_items">
               Провалы
-              <input type="checkbox" >
-              <input type="checkbox">
-              <input type="checkbox" >
+              <input type="checkbox" [(ngModel)]="checkboxData.fail1" (ngModelChange)="saveFunction()">
+              <input type="checkbox" [(ngModel)]="checkboxData.fail2" (ngModelChange)="saveFunction()">
+              <input type="checkbox" [(ngModel)]="checkboxData.fail3" (ngModelChange)="saveFunction()">
           </div>
           <div class="character-stats_collor__dice-rolls_health-dice_items"> <b>Испыт.Против смерти</b> </div>
       </div>

@@ -73,3 +73,36 @@ interface IHealthData {
   maxHealthDice:string;
   nowHealthDice:string;
 }
+
+interface ICheckboxData {
+  powerCheck:string;
+  dexCheck:string;
+  enduranceCheck:string;
+  intellectCheck:string;
+  wisdomCheck:string;
+  charismaCheck:string;
+  acrobaticsCheck:string;
+  athleticsCheck:string;
+  attentionCheck:string;
+  survivalCheck:string;
+  trainingCheck:string;
+  intimidationCheck:string;
+  performanceCheck:string;
+  hystoryCheck:string;
+  handDexCheck:string;
+  magicCheck:string;
+  medicineCheck:string;
+  deceptionCheck:string;
+  natureCheck:string;
+  insightCheck:string;
+  investigationsCheck:string;
+  religionCheck:string;
+  stealthCheck:string;
+  persuasionCheck:string;
+  success1:string;
+  success2:string;
+  success3:string;
+  fail1:string;
+  fail2:string;
+  fail3:string;
+}
